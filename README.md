@@ -1,4 +1,4 @@
-# 🛡️ Security CV Dashboard
+# 🛡️ SentinelAI
 
 <div align="center">
 
