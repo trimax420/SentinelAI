@@ -1,12 +1,15 @@
-# 🛡️ SentinelAI
+# 🚨 SentinelAI
 
 <div align="center">
 
-![Security Dashboard](https://img.shields.io/badge/Security-Dashboard-blue?style=for-the-badge&logo=shield)
+![SentinelAI](https://img.shields.io/badge/SentinelAI-Security%20Platform-blue?style=for-the-badge&logo=shield)
 ![AI Powered](https://img.shields.io/badge/AI-Powered-green?style=for-the-badge&logo=brain)
 ![Real Time](https://img.shields.io/badge/Real--Time-Monitoring-red?style=for-the-badge&logo=video)
+![Hybrid Cloud](https://img.shields.io/badge/Hybrid-Cloud-orange?style=for-the-badge&logo=cloud)
 
-**A comprehensive AI-powered security surveillance and monitoring system that combines computer vision, real-time analytics, and an intuitive web dashboard for enhanced security management.**
+**🤖 Your Digital Guardian Never Sleeps**
+
+*A comprehensive AI-powered security surveillance platform that combines on-premises computer vision processing with cloud-based dashboard and data logging for optimal performance and scalability.*
 
 ---
 
@@ -14,7 +17,32 @@
 
 ## ✨ Key Highlights
 
-> 🔥 **Real-time AI Detection** | 🎯 **Advanced Analytics** | ☁️ **Cloud Integration** | 📱 **Modern Dashboard**
+> 🔥 **On-Premises AI Processing** | 🎯 **Cloud Dashboard** | ☁️ **Hybrid Architecture** | 📊 **Cloud Data Logging**
+
+## 🏗️ **Hybrid Deployment Architecture**
+
+<div align="center">
+
+```
+🏢 ON-PREMISES                    ☁️ CLOUD
+┌─────────────────────┐          ┌─────────────────────┐
+│  🎥 Camera Feeds    │          │  📱 Web Dashboard   │
+│  🧠 AI Processing   │ ────────▶│  📊 Analytics UI    │
+│  🔍 Detection       │          │  ⚠️  Alert Panel    │
+│  📸 Evidence        │          │  👥 User Management │
+└─────────────────────┘          └─────────────────────┘
+         │                                │
+         ▼                                ▼
+┌─────────────────────┐          ┌─────────────────────┐
+│  🗄️ Local Storage   │ ────────▶│  📝 Cloud Logging   │
+│  ⚡ Real-time Data  │          │  🔄 Data Sync       │
+│  🔐 Secure Backup  │          │  📈 Long-term Data  │
+└─────────────────────┘          └─────────────────────┘
+```
+
+**🎯 Best of Both Worlds:** *Secure on-premises processing with cloud accessibility*
+
+</div>
 
 ## 🚀 Core Features
 
@@ -41,74 +69,105 @@
 - 🚶 **Traffic Pattern Analysis**: Understand visitor flow and peak hours
 - 📸 **Evidence Management**: Automated snapshot capture for incidents
 
-### ☁️ **Cloud Integration & Data Logging**
-- 🗄️ **AWS S3 Storage**: Secure cloud storage for snapshots, videos, and evidence
-- 📝 **Cloud Data Logging**: Comprehensive logging of all security events and analytics
-- 🔄 **Real-time Sync**: Automatic synchronization of data to cloud storage
-- 📊 **Cloud Analytics**: Historical data analysis and reporting in the cloud
-- 🔐 **Secure Backup**: Encrypted backup of all security data and configurations
-- 📱 **Remote Access**: Access logs and data from anywhere with cloud integration
-- 🔍 **Audit Trail**: Complete audit trail of all system activities stored in cloud
-- 📈 **Scalable Storage**: Auto-scaling cloud storage for growing data needs
+### 🏢 **On-Premises Processing**
+- 🧠 **Local AI Processing**: All computer vision and detection runs on-premises for privacy
+- ⚡ **Real-time Analysis**: Instant processing without cloud latency
+- 🔐 **Data Privacy**: Sensitive video data never leaves your premises
+- 💾 **Local Storage**: Critical evidence stored locally for immediate access
+- 🚀 **High Performance**: Dedicated hardware for optimal processing speed
+- 🔒 **Secure Environment**: Complete control over your security infrastructure
 
-## 🏗️ System Architecture
+### ☁️ **Cloud Dashboard & Logging**
+- 📱 **Cloud Dashboard**: Access your security interface from anywhere
+- 📊 **Cloud Analytics**: Historical data analysis and reporting in the cloud
+- 📝 **Comprehensive Logging**: All events, alerts, and analytics logged to cloud
+- 🔄 **Real-time Sync**: Metadata and analytics synchronized to cloud
+- 🌐 **Remote Access**: Monitor your system from any location
+- 📈 **Scalable Storage**: Auto-scaling cloud storage for logs and analytics
+- 🔍 **Audit Trail**: Complete audit trail of all system activities
+- 🔐 **Encrypted Backup**: Secure backup of configurations and non-sensitive data
+
+## 🏗️ **SentinelAI Technical Architecture**
 
 <div align="center">
 
+### 🔄 **Hybrid Cloud Architecture**
+
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   🎥 Cameras    │───▶│  🧠 AI Engine    │───▶│  ☁️ Cloud       │
-│   RTSP Feeds    │    │  Detection &     │    │  Storage &      │
-│                 │    │  Analytics       │    │  Logging        │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                              │                          │
-                              ▼                          │
-┌─────────────────┐    ┌──────────────────┐             │
-│  📱 Dashboard   │◀───│  🚀 FastAPI      │◀────────────┘
-│  Next.js UI     │    │  Backend API     │
-└─────────────────┘    └──────────────────┘
+🏢 ON-PREMISES PROCESSING           ☁️ CLOUD SERVICES
+┌─────────────────────────────┐    ┌─────────────────────────────┐
+│  🎥 RTSP Camera Feeds       │    │  📱 Web Dashboard           │
+│  ├─ Live Video Streams      │    │  ├─ Real-time Monitoring    │
+│  └─ Multi-camera Support    │    │  └─ Alert Management        │
+└─────────────────────────────┘    └─────────────────────────────┘
+              │                                    ▲
+              ▼                                    │
+┌─────────────────────────────┐                   │
+│  🧠 AI Processing Engine    │                   │
+│  ├─ YOLO Object Detection   │                   │
+│  ├─ Facial Recognition      │                   │
+│  ├─ Behavior Analysis       │                   │
+│  └─ Zone Analytics          │                   │
+└─────────────────────────────┘                   │
+              │                                    │
+              ▼                                    │
+┌─────────────────────────────┐    ┌─────────────────────────────┐
+│  🚀 FastAPI Backend         │────│  📊 Cloud Analytics         │
+│  ├─ Real-time API           │    │  ├─ Historical Data         │
+│  ├─ WebSocket Streams       │    │  ├─ Trend Analysis          │
+│  └─ Alert Generation        │    │  └─ Reporting Engine        │
+└─────────────────────────────┘    └─────────────────────────────┘
+              │                                    │
+              ▼                                    ▼
+┌─────────────────────────────┐    ┌─────────────────────────────┐
+│  💾 Local Storage           │────│  📝 Cloud Logging           │
+│  ├─ Video Evidence          │    │  ├─ Event Logs              │
+│  ├─ Snapshots              │    │  ├─ Analytics Data           │
+│  └─ Configuration           │    │  └─ Audit Trail             │
+└─────────────────────────────┘    └─────────────────────────────┘
 ```
 
 </div>
 
-### 🔧 **Backend Stack** (FastAPI + Python)
+### 🏢 **On-Premises Stack** (Privacy-First Processing)
 - 🚀 **FastAPI**: High-performance REST API with automatic documentation
 - 👁️ **Computer Vision**: OpenCV, YOLO, MediaPipe, face_recognition
-- 🗃️ **Database**: PostgreSQL with SQLAlchemy ORM for robust data management
+- 🗃️ **Local Database**: PostgreSQL with SQLAlchemy ORM for local data
 - ⚡ **Real-time Processing**: WebSocket connections for live updates
-- ☁️ **Cloud Storage**: AWS S3 integration for media storage and logging
+- 🧠 **AI Engine**: Local processing ensures data privacy and low latency
 - 📊 **Analytics Engine**: Real-time data processing and insights
 - 🔐 **Security**: JWT authentication and role-based access control
 
-### 🎨 **Frontend Stack** (Next.js + React)
+### ☁️ **Cloud Stack** (Dashboard & Logging)
 - ⚛️ **Next.js 14**: Modern React framework with TypeScript support
 - 🎨 **Tailwind CSS**: Utility-first CSS framework for rapid UI development
 - 🧩 **Radix UI**: Accessible, unstyled component library
 - 📊 **Recharts**: Interactive data visualization and charting
 - 🔄 **Real-time Updates**: Live data synchronization with WebSockets
 - 📱 **Responsive Design**: Mobile-first responsive interface
+- ☁️ **Cloud Services**: AWS/Azure integration for logging and storage
 
 ## 📋 Prerequisites
 
 <div align="center">
 
-| Component | Version | Purpose |
-|-----------|---------|---------|
-| 🐍 **Python** | 3.8+ | Backend API & AI processing |
-| 🟢 **Node.js** | 18+ | Frontend development |
-| 🐘 **PostgreSQL** | 12+ | Database management |
-| 🎬 **FFmpeg** | Latest | Video processing |
-| 🚀 **CUDA** | Optional | GPU acceleration |
-| ☁️ **AWS Account** | Optional | Cloud storage & logging |
+| Component | Version | Purpose | Deployment |
+|-----------|---------|---------|------------|
+| 🐍 **Python** | 3.8+ | Backend API & AI processing | On-Premises |
+| 🟢 **Node.js** | 18+ | Frontend development | Cloud |
+| 🐘 **PostgreSQL** | 12+ | Database management | On-Premises |
+| 🎬 **FFmpeg** | Latest | Video processing | On-Premises |
+| 🚀 **CUDA** | Optional | GPU acceleration | On-Premises |
+| ☁️ **Cloud Account** | Required | Dashboard & logging | Cloud |
 
 </div>
 
-## 🛠️ Quick Start Installation
+## 🛠️ **SentinelAI Installation Guide**
 
 ### 🔥 **Step 1: Clone Repository**
 ```bash
 git clone <repository-url>
-cd security-cv-dashboard
+cd SentinelAI
 ```
 
 ### 🐍 **Step 2: Backend Setup**
@@ -140,10 +199,10 @@ Create a `.env` file in the backend directory:
 DATABASE_URL=postgresql://username:password@localhost/security_db
 
 # 🚀 API Configuration
-PROJECT_NAME=Security Monitoring System
+PROJECT_NAME=SentinelAI
 VERSION=1.0.0
-DESCRIPTION=AI-powered security surveillance system
-CORS_ORIGINS=["http://localhost:3000"]
+DESCRIPTION=Your Digital Guardian Never Sleeps
+CORS_ORIGINS=["http://localhost:3000", "https://your-cloud-dashboard.com"]
 
 # 📁 Local Storage
 SNAPSHOT_BASE_DIR=data/snapshots
@@ -183,18 +242,45 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 </details>
 
-### ⚛️ **Step 3: Frontend Setup**
+### ☁️ **Step 3: Cloud Dashboard Setup**
 
 <details>
-<summary>🎨 <strong>Frontend Configuration</strong> (Click to expand)</summary>
+<summary>🎨 <strong>Cloud Dashboard Configuration</strong> (Click to expand)</summary>
 
 ```bash
 cd frontend
 npm install
+
+# Configure environment for cloud deployment
+cp .env.example .env.production
+# Edit .env.production with your cloud settings
+
+# For development
 npm run dev
+
+# For cloud deployment
+npm run build
+npm run start
 ```
 
-✅ **Frontend running at:** `http://localhost:3000`
+✅ **Dashboard accessible at:** `https://your-cloud-domain.com`
+
+</details>
+
+### 🔄 **Step 4: Hybrid Connection Setup**
+
+<details>
+<summary>🌐 <strong>Connect On-Premises to Cloud</strong> (Click to expand)</summary>
+
+```bash
+# Configure secure connection between on-premises and cloud
+# Set up VPN or secure tunnel if required
+
+# Update backend configuration for cloud connectivity
+CLOUD_DASHBOARD_URL=https://your-cloud-dashboard.com
+CLOUD_LOGGING_ENDPOINT=https://api.your-cloud.com/logs
+API_KEY=your-secure-api-key
+```
 
 </details>
 
@@ -202,7 +288,7 @@ npm run dev
 ```bash
 # Use the automated setup script
 chmod +x setup.sh
-./setup.sh
+./setup.sh --hybrid-mode
 ```
 
 ## 🎯 Usage
