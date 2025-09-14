@@ -51,45 +51,80 @@
 - 🔍 **Audit Trail**: Complete audit trail of all system activities stored in cloud
 - 📈 **Scalable Storage**: Auto-scaling cloud storage for growing data needs
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-### Backend (FastAPI + Python)
-- **FastAPI**: High-performance REST API
-- **Computer Vision**: OpenCV, YOLO, MediaPipe, face_recognition
-- **Database**: PostgreSQL with SQLAlchemy ORM
-- **Real-time Processing**: WebSocket connections for live updates
-- **Cloud Storage**: AWS S3 integration for media storage
+<div align="center">
 
-### Frontend (Next.js + React)
-- **Next.js 14**: Modern React framework with TypeScript
-- **Tailwind CSS**: Utility-first CSS framework
-- **Radix UI**: Accessible component library
-- **Recharts**: Interactive data visualization
-- **Real-time Updates**: Live data synchronization
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   🎥 Cameras    │───▶│  🧠 AI Engine    │───▶│  ☁️ Cloud       │
+│   RTSP Feeds    │    │  Detection &     │    │  Storage &      │
+│                 │    │  Analytics       │    │  Logging        │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+                              │                          │
+                              ▼                          │
+┌─────────────────┐    ┌──────────────────┐             │
+│  📱 Dashboard   │◀───│  🚀 FastAPI      │◀────────────┘
+│  Next.js UI     │    │  Backend API     │
+└─────────────────┘    └──────────────────┘
+```
+
+</div>
+
+### 🔧 **Backend Stack** (FastAPI + Python)
+- 🚀 **FastAPI**: High-performance REST API with automatic documentation
+- 👁️ **Computer Vision**: OpenCV, YOLO, MediaPipe, face_recognition
+- 🗃️ **Database**: PostgreSQL with SQLAlchemy ORM for robust data management
+- ⚡ **Real-time Processing**: WebSocket connections for live updates
+- ☁️ **Cloud Storage**: AWS S3 integration for media storage and logging
+- 📊 **Analytics Engine**: Real-time data processing and insights
+- 🔐 **Security**: JWT authentication and role-based access control
+
+### 🎨 **Frontend Stack** (Next.js + React)
+- ⚛️ **Next.js 14**: Modern React framework with TypeScript support
+- 🎨 **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- 🧩 **Radix UI**: Accessible, unstyled component library
+- 📊 **Recharts**: Interactive data visualization and charting
+- 🔄 **Real-time Updates**: Live data synchronization with WebSockets
+- 📱 **Responsive Design**: Mobile-first responsive interface
 
 ## 📋 Prerequisites
 
-- **Python 3.8+**
-- **Node.js 18+**
-- **PostgreSQL 12+**
-- **FFmpeg** (for video processing)
-- **CUDA** (optional, for GPU acceleration)
+<div align="center">
 
-## 🛠️ Installation
+| Component | Version | Purpose |
+|-----------|---------|---------|
+| 🐍 **Python** | 3.8+ | Backend API & AI processing |
+| 🟢 **Node.js** | 18+ | Frontend development |
+| 🐘 **PostgreSQL** | 12+ | Database management |
+| 🎬 **FFmpeg** | Latest | Video processing |
+| 🚀 **CUDA** | Optional | GPU acceleration |
+| ☁️ **AWS Account** | Optional | Cloud storage & logging |
 
-### 1. Clone the Repository
+</div>
+
+## 🛠️ Quick Start Installation
+
+### 🔥 **Step 1: Clone Repository**
 ```bash
 git clone <repository-url>
 cd security-cv-dashboard
 ```
 
-### 2. Backend Setup
+### 🐍 **Step 2: Backend Setup**
+
+<details>
+<summary>🔧 <strong>Backend Configuration</strong> (Click to expand)</summary>
 
 #### Create Virtual Environment
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Activate virtual environment
+source venv/bin/activate  # Linux/Mac
+# OR
+venv\Scripts\activate     # Windows
 ```
 
 #### Install Dependencies
@@ -99,27 +134,35 @@ pip install -r requirements.txt
 
 #### Environment Configuration
 Create a `.env` file in the backend directory:
+
 ```env
-# Database
+# 🗃️ Database Configuration
 DATABASE_URL=postgresql://username:password@localhost/security_db
 
-# API Configuration
+# 🚀 API Configuration
 PROJECT_NAME=Security Monitoring System
 VERSION=1.0.0
 DESCRIPTION=AI-powered security surveillance system
 CORS_ORIGINS=["http://localhost:3000"]
 
-# Storage
+# 📁 Local Storage
 SNAPSHOT_BASE_DIR=data/snapshots
 
-# AWS S3 (Optional)
+# ☁️ AWS S3 Cloud Storage & Logging
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_REGION=us-east-1
-S3_BUCKET_NAME=your-bucket-name
+S3_BUCKET_NAME=your-security-bucket
 
-# Camera Configuration
+# 📝 Cloud Logging Configuration
+ENABLE_CLOUD_LOGGING=true
+LOG_RETENTION_DAYS=90
+CLOUD_LOG_LEVEL=INFO
+
+# 📹 Camera Configuration
 DEFAULT_RTSP_URL=rtsp://your-camera-url
+MAX_CAMERAS=10
+DETECTION_CONFIDENCE=0.5
 ```
 
 #### Database Setup
@@ -136,7 +179,14 @@ python run_migrations.py
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-### 3. Frontend Setup
+✅ **Backend running at:** `http://localhost:8000`
+
+</details>
+
+### ⚛️ **Step 3: Frontend Setup**
+
+<details>
+<summary>🎨 <strong>Frontend Configuration</strong> (Click to expand)</summary>
 
 ```bash
 cd frontend
@@ -144,7 +194,16 @@ npm install
 npm run dev
 ```
 
-The frontend will be available at `http://localhost:3000`
+✅ **Frontend running at:** `http://localhost:3000`
+
+</details>
+
+### 🚀 **Quick Setup Script**
+```bash
+# Use the automated setup script
+chmod +x setup.sh
+./setup.sh
+```
 
 ## 🎯 Usage
 
